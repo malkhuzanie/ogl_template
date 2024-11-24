@@ -1,0 +1,31 @@
+* Building the project
+#+BEGIN_SRC sh
+  git clone --recursive https://github.com/malkhu7anie/alaqsa.git
+#+END_SRC
+
+** Windows
+    - open the project directory in visual studio
+    - select src/main.cpp as executable.
+    - press run to build the project.
+
+** Linux
+- open the project root folder
+  #+BEGIN_SRC sh
+    mkdir build
+    cd build
+  #+END_SRC
+- configure 
+  #+BEGIN_SRC sh
+    cmake ../
+  #+END_SRC
+- build
+  using cmake
+  #+BEGIN_SRC sh
+    cmake --build .
+  #+END_SRC
+  or alternatively using make
+  #+BEGIN_SRC sh
+    make
+  #+END_SRC
+
+
