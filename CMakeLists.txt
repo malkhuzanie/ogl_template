@@ -2,7 +2,7 @@
 
 set(CMAKE_CXX_STANDARD 20)
 
-project (alaqsa)
+project (app)
 
 find_package(OpenGL REQUIRED)
 
@@ -47,7 +47,7 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 )
 
 find_package(Threads REQUIRED)
-target_link_libraries(${PROJECT_NAME} OpenGL::GL OpenGL::GLU glfw glm freeglut SDL2)
+target_link_libraries(${PROJECT_NAME} OpenGL::GL OpenGL::GLU glfw glm freeglut)
 
 IF (MSVC)
     IF (${CMAKE_VERSION} VERSION_LESS "3.6.0")

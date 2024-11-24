@@ -6,15 +6,14 @@
 
 class Renderer {
 public:
-    Renderer();
+  Renderer();
 
-    static Renderer& instance();
-    void render();
-    void add(std::shared_ptr<Entity> entity, const Transform& = {});
+  static Renderer &instance();
+  void render();
+  void add(std::shared_ptr<Entity> entity);
 
 private:
-    std::vector<std::shared_ptr<Entity>> entity;
-    std::vector<Transform> trans;
+  std::vector<std::shared_ptr<Entity>> entity;
 };
 
 #endif
